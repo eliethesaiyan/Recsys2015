@@ -1,0 +1,15 @@
+#requirement for panda
+numpy>=1.7.0 
+python-dateutil>=1.5
+pytz>=2011k
+#end of pandas
+pandas
+#requirement for scikit-learn
+scipy>=0.9
+#end of scikit-learn req
+scikit-learn
+#requirement for matplot 
+#end of matplot requirement
+matplotlib
+seaborn
+pip install pyqt
