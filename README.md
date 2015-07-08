@@ -14,29 +14,29 @@ If yes, what are the items that are going to be bought?
 
 ###The training data comprises two different files:
 
-[]yoochoose-clicks.dat - Click events. Each record/line in the file has the following fields:
-[]Session ID – the id of the session. In one session there are one or many clicks.
-[]Timestamp – the time when the click occurred.
-[]Item ID – the unique identifier of the item.
-[]Category – the category of the item.
-[]yoochoose-buys.dat - Buy events. Each record/line in the file has the following fields:
-[]Session ID - the id of the session. In one session there are one or many buying events.
-[]Timestamp - the time when the buy occurred.
-[]Item ID – the unique identifier of item.
-[]Price – the price of the item.
-[]Quantity – how many of this item were bought.
+-yoochoose-clicks.dat - Click events. Each record/line in the file has the following fields:
+-Session ID – the id of the session. In one session there are one or many clicks.
+-Timestamp – the time when the click occurred.
+-Item ID – the unique identifier of the item.
+-Category – the category of the item.
+-yoochoose-buys.dat - Buy events. Each record/line in the file has the following fields:
+-Session ID - the id of the session. In one session there are one or many buying events.
+-Timestamp - the time when the buy occurred.
+-Item ID – the unique identifier of item.
+-Price – the price of the item.
+-Quantity – how many of this item were bought.
 The Session ID in yoochoose-buys.dat will always exist in the yoochoose-clicks.dat file – the records with the same Session ID together form the sequence of click events of a certain user during the session. The session could be short (few minutes) or very long (few hours), it could have one click or hundreds of clicks. All depends on the activity of the user.
 
 ##Test File
 
 ###The Test data is one file:
 
-[]yoochoose-test.dat - identically structured as the yoochoose-clicks.dat of the training data
-[]Session ID
-[]Timestamp
-[]Item ID
-[]Category
-[]Solution file
+-yoochoose-test.dat - identically structured as the yoochoose-clicks.dat of the training data
+-Session ID
+-Timestamp
+-Item ID
+-Category
+-Solution file
 
 The task is to predict for each session in the test file, whether there is going to be a buying event in this session, and if there is, what are the items that will be bought. No need to predict quantities.
 
